@@ -13,10 +13,10 @@ public class BuyerController {
     private final HttpSession session;
 
     //0. 메인페이지 구현
-    @GetMapping("/")
-    public String list(){
-        return "product/list";
-    }
+//    @GetMapping("/")
+//    public String list(){
+//        return "product/list";
+//    }
 
     //1. 회원가입
     @PostMapping("/buyer/join")
