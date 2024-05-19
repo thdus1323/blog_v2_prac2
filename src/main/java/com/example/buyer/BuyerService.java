@@ -16,4 +16,10 @@ public class BuyerService {
         buyerRepository.join(reqDTO);
     }
 
+    //2.로그인
+    public Buyer loginByNameAndPw(BuyerRequest.LoginDTO reqDTO){
+        Buyer sessionBuyer = buyerRepository.login(reqDTO);
+        return sessionBuyer;
+    }
+
 }
